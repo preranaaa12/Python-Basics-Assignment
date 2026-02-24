@@ -1,5 +1,6 @@
 # Python-Basics-Assignment
 Name: Prerana V U
+
 Beginner Python programs covering loops, conditionals, and functions. A Collection of Python basics exercises including calculator, ATM simulator, patterns, and number logic.
 
 Questions Attempted:
