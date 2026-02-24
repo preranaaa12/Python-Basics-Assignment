@@ -1,0 +1,11 @@
+year = int(input("Enter birth year: "))
+current_year = 2026
+
+age = current_year - year
+
+print("Age:", age)
+print("Months:", age * 12)
+print("Days:", age * 365)
+print("Hours:", age * 365 * 24)
+print("Minutes:", age * 365 * 24 * 60)
+print("Years to 100:", 100 - age)

@@ -1,0 +1,25 @@
+age = int(input("Enter age: "))
+day = input("Enter day: ")
+tickets = int(input("Number of tickets: "))
+
+if age < 3:
+    price = 0
+elif age <= 12:
+    price = 150
+elif age <= 59:
+    price = 300
+else:
+    price = 200
+
+total = price * tickets
+
+if day == "Friday" or day == "Saturday" or day == "Sunday" or day == "friday" or day == "saturday" or day == "sunday":
+    discount = total * 0.20
+else:
+    discount = 0
+
+final_amount = total - discount
+
+print("Base price:", total)
+print("Discount:", discount)
+print("Final amount:", final_amount)

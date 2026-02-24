@@ -1,0 +1,20 @@
+text = input("Enter a sentence: ")
+print("Original:", text)
+print("Chars (with spaces):", len(text))
+count = 0
+for ch in text:
+    if ch != " ":
+        count = count + 1
+print("Chars (without spaces):", count)
+words = 1
+for ch in text:
+    if ch == " ":
+        words = words + 1
+print("Words:", words)
+print("Upper:", text.upper())
+print("Lower:", text.lower())
+print("Title:", text.title())
+rev = ""
+for ch in text:
+    rev = ch + rev
+print("Reversed:", rev)

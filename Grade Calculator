@@ -1,0 +1,27 @@
+total = 0
+pass_all = True
+for i in range(1, 6):
+    marks = int(input("Enter marks for subject " + str(i) + ": "))
+    total = total + marks
+    if marks < 40:
+        pass_all = False
+percent = total / 5
+print("Total:", total)
+print("Percentage:", percent)
+if percent >= 90:
+    grade = "A+"
+elif percent >= 80:
+    grade = "A"
+elif percent >= 70:
+    grade = "B"
+elif percent >= 60:
+    grade = "C"
+elif percent >= 50:
+    grade = "D"
+else:
+    grade = "F"
+print("Grade:", grade)
+if pass_all:
+    print("Result: Pass")
+else:
+    print("Result: Fail")

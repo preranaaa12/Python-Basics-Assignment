@@ -1,0 +1,25 @@
+def count_words(t):
+    count = 1
+    for ch in t:
+        if ch == " ":
+            count = count + 1
+    return count
+
+def count_vowels(t):
+    v = 0
+    for ch in t:
+        if ch in "aeiouAEIOU":
+            v = v + 1
+    return v
+
+def reverse_text(t):
+    r = ""
+    for ch in t:
+        r = ch + r
+    return r
+
+text = input("Enter text: ")
+
+print("Words:", count_words(text))
+print("Vowels:", count_vowels(text))
+print("Reversed:", reverse_text(text))

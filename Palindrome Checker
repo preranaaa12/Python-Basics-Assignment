@@ -1,0 +1,22 @@
+text = input("Enter word/number: ")
+
+# Convert to lowercase manually
+lower = ""
+for ch in text:
+    if ch >= 'A' and ch <= 'Z':
+        lower = lower + chr(ord(ch) + 32)
+    else:
+        lower = lower + ch
+
+# Reverse manually
+rev = ""
+for ch in lower:
+    rev = ch + rev
+
+print("Original:", lower)
+print("Reversed:", rev)
+
+if lower == rev:
+    print("Result: PALINDROME")
+else:
+    print("Result: NOT PALINDROME")

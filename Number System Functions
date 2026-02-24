@@ -1,0 +1,63 @@
+def factorial(n):
+    if n < 0:
+        return "Not defined"
+    f = 1
+    for i in range(1, n + 1):
+        f = f * i
+    return f
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+def fibonacci(n):
+    a = 0
+    b = 1
+    for i in range(n):
+        c = a + b
+        a = b
+        b = c
+    return a
+
+def sum_of_digits(n):
+    s = 0
+    while n > 0:
+        s = s + (n % 10)
+        n = n // 10
+    return s
+
+def reverse_number(n):
+    r = 0
+    while n > 0:
+        r = r * 10 + (n % 10)
+        n = n // 10
+    return r
+
+print("1.Factorial 2.Prime 3.Fibonacci 4.SumDigits 5.Reverse")
+choice = int(input("Enter choice: "))
+num = int(input("Enter number: "))
+
+if choice == 1:
+    print("Factorial:", factorial(num))
+
+elif choice == 2:
+    if is_prime(num):
+        print("Prime number")
+    else:
+        print("Not prime")
+
+elif choice == 3:
+    print("Fibonacci:", fibonacci(num))
+
+elif choice == 4:
+    print("Sum of digits:", sum_of_digits(num))
+
+elif choice == 5:
+    print("Reversed:", reverse_number(num))
+
+else:
+    print("Invalid choice")

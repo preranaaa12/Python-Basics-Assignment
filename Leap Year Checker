@@ -1,0 +1,12 @@
+year = int(input("Enter year: "))
+
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print(year, "is a Leap Year (divisible by 400)")
+        else:
+            print(year, "is NOT a Leap Year (century not divisible by 400)")
+    else:
+        print(year, "is a Leap Year (divisible by 4)")
+else:
+    print(year, "is NOT a Leap Year (not divisible by 4)")
